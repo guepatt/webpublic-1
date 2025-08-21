@@ -1,0 +1,65 @@
+  const hexToRgb = input => {
+    input = input + "";
+    input = input.replace("#", "");
+    let hexRegex = /[0-9A-Fa-f]/g;
+    if (!hexRegex.test(input) || (input.length !== 3 && input.length !== 6)) {
+      throw new Error("input is not a valid hex color.");
+    }
+    if (input.length === 3) {
+      let first = input[0];
+      let second = input[1];
+      let last = input[2];
+      input = first + first + second + second + last + last;
+    }
+    input = input.toUpperCase(input);
+    let first = input[0] + input[1];
+    let second = input[2] + input[3];
+    let last = input[4] + input[5];
+    return (
+      parseInt(first, 16) +
+      ", " +
+      parseInt(second, 16) +
+      ", " +
+      parseInt(last, 16)
+    );
+  };
+
+const blackColor = "#000";
+const primaryMain = "#68829b"
+const primaryColor = [
+    "#000",
+    "#293744",
+    "#3b4c5c",
+    "4a5f72",
+    "#af2cc5",
+    "#5a7389",
+    "#68829b"
+  ];
+
+  const secondaryColor = [
+      "#6a5942",
+      "#35291e",
+      "#d0cdca",
+      "#ebebeb",
+      "#d0cdca",
+      "#b3aba3",
+      "#968a7c",
+      "#80715e",
+      "#6a5942",
+      "#604f3b",
+      "#514332",
+      "#443629",
+      "#35291e",
+  ]
+
+//Note that linear-gradient is a CSS function that returns an image, not a color
+// background property takes an image, backgroundColor property takes just a color
+
+  export const gradientColor_1 = "rgba(" + hexToRgb(primaryMain) + ", 0.99)"
+  export const gradientColor_2 = "linear-gradient(150deg,rgba(" + hexToRgb(blackColor) + ",.89), rgba(" + hexToRgb(primaryColor[2]) + ",.60))"
+   export const gradientColor_3 = "linear-gradient(165deg,rgba(" + hexToRgb(secondaryColor[0]) + ",0.1), rgba(" + hexToRgb(secondaryColor[3]) + ",.90), rgba(" + hexToRgb(secondaryColor[5]) + ",0.4))"
+  export const gradientColor_4 = "linear-gradient(0deg,rgba(" + hexToRgb(blackColor) + ",.49), rgba(" + hexToRgb(secondaryColor[0]) + ",.0))"
+  export const gradientColor_5 = "linear-gradient(180deg,rgba(" + hexToRgb(secondaryColor[4]) + ",0.9), rgba(" + hexToRgb(secondaryColor[0]) + ",.0.8))"
+
+ 
+  export const gradientColor_6 = "linear-gradient(180deg,rgb(26, 36, 44, 0.9),rgb(37, 120, 198, 0.8))"
