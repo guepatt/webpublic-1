@@ -27,6 +27,25 @@ export const INTERVALS = { 1: "daily", 2: "weekly", 3: "mo", 4: "quarterly", 5: 
 export const TESTPIC = "https://olonizza.sirv.com/TestPic.jpeg";
 
 ////////////////////////////////////
+//  Access CDN - Videos
+/////////////////////////////////////
+
+export const DATASMALL = "http://34.160.131.255/videos/Data%20Small.mp4";
+export const DATA = "http://34.160.131.255/videos/Data.mp4";
+export const DATA2 = "http://34.160.131.255/videos/Data2.mp4";
+export const DNA = "http://34.160.131.255/videos/Dna.mp4";
+export const FITNESS = "http://34.160.131.255/videos/Fitness.mp4";
+export const IMAGING = "http://34.160.131.255/videos/Imaging.mp4";
+export const LADY = "http://34.160.131.255/videos/Lady.mp4";
+export const LADYTREE = "http://34.160.131.255/videos/Ladytree.mp4";
+export const MANWATER = "http://34.160.131.255/videos/Manwater.mp4";
+export const MICROSCOPE = "http://34.160.131.255/videos/Microscope.mp4";
+export const MICROSCOPEDOCTOR = "http://34.160.131.255/videos/Microscopedoctor.mp4";
+export const NERVES = "http://34.160.131.255/videos/Nerves.mp4";
+export const FAMILY2 = "http://34.160.131.255/videos/Family2.mp4";
+
+
+////////////////////////////////////
 //  Access Genomics Files
 /////////////////////////////////////
 

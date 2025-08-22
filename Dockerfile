@@ -1,4 +1,4 @@
-FROM node:alpine3.20 as build
+FROM node:alpine3.20 AS build
 
 # ENV NODE_ENV=production
 

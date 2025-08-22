@@ -2,22 +2,25 @@ import {useState, useEffect} from "react";
 import Box from '@mui/material/Box';
 import ParallaxContent from "./ParallaxContent";
 import { gradientColor_1, gradientColor_2 } from "../../../../colors";
-import Ladytree from '../../../../assets/Ladytree.mp4'
-import Imaging from '../../../../assets/Imaging.mp4'
-import Manwater from '../../../../assets/Manwater.mp4'
-import Dna from '../../../../assets/Dna.mp4'
-import Microscopedoctor from '../../../../assets/Microscopedoctor.mp4'
-import Fitness from '../../../../assets/Fitness.mp4'
-import Microscope from '../../../../assets/Microscope.mp4'
-import Lady from '../../../../assets/Lady.mp4'
-import Nerves from '../../../../assets/Nerves.mp4'
-import Data2 from '../../../../assets/Data2.mp4'
+
+import { LADYTREE } from "../../../../constants";
+import { IMAGING } from "../../../../constants";
+import { MANWATER } from "../../../../constants";
+import { DNA } from "../../../../constants";
+import { MICROSCOPEDOCTOR } from "../../../../constants";
+import { FITNESS } from "../../../../constants";
+import { MICROSCOPE } from "../../../../constants";
+import { LADY } from "../../../../constants";
+import { NERVES } from "../../../../constants";
+import { DATA2 } from "../../../../constants";
 
 
-const videos = [ Ladytree, Imaging, Manwater, Dna, Microscopedoctor, Fitness, Microscope, Lady, Nerves, Data2 ];
+//const videos = [ Ladytree, Imaging, Manwater, Dna, Microscopedoctor, Fitness, Microscope, Lady, Nerves, Data2 ];
+const videos = [ LADYTREE, IMAGING, MANWATER, DNA, MICROSCOPEDOCTOR, FITNESS, MICROSCOPE, LADY, NERVES, DATA2 ];
+
 
 const FADE_DURATION = 6000; // in ms
-const DISPLAY_DURATION = 12000; // total time per video
+const DISPLAY_DURATION = 10000; // total time per video
 
 export default function Parallax() {
 
